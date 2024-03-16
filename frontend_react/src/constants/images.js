@@ -26,6 +26,7 @@ import about04 from '../assets/about04.png';
 import profile from '../assets/profile.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
+import utk_logo from '../assets/utk_logo.png';
 
 import adidas from '../assets/adidas.png';
 import amazon from '../assets/amazon.png';
@@ -62,6 +63,7 @@ export default {
   profile,
   circle,
   logo,
+  utk_logo,
   adidas,
   amazon,
   asus,

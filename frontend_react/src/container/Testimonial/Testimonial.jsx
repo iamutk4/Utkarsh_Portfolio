@@ -23,7 +23,6 @@ const Testimonial = () => {
     client.fetch(query)
       .then((data) => {
 
-        console.log(data);
         setTestimonials(data);
       })
     

@@ -148,6 +148,7 @@
     text-align: center !important;
     line-height: 1.5 !important;
     opacity: 1 !important;
+    place: bottom !important; /* Adjust the placement of the tooltip */
   
     @media screen and (min-width: 2000px) {
       font-size: 1.75rem !important;

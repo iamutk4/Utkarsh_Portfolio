@@ -19,7 +19,6 @@ const Skills = () => {
     client.fetch(query)
       .then((data) => {
 
-        console.log(data);
         setExperience(data);
       })
     
@@ -31,7 +30,7 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className='head-text'>Skills & Experience</h2>
+      <h2 className='head-text'>Skills & <span>Experience</span></h2>
 
       <div className='app__skills-container'>
         <motion.div className='app__skills-list'>
@@ -52,8 +51,11 @@ const Skills = () => {
         </motion.div>
 
         <motion.div className='app__skills-exp'>
-          {console.log('here', experience.works)}
-          {experience?.map((experience) => (
+          {experience?.sort((a, b) => {
+          const yearA = parseInt(a.year.split('-')[0]);
+          const yearB = parseInt(b.year.split('-')[0]);
+          return yearB - yearA; // Sort based on the starting year, with the latest on top
+        }).map((experience) => (
             <motion.div
             className='app__skills-exp-item'
             key={experience.year}
@@ -63,13 +65,13 @@ const Skills = () => {
               </div>
               <motion.div className='app__skills-exp-works'>
                 {experience.works.map((work) => (
-                  <>
+                  <React.Fragment key={work.name}>
                     <motion.div
                     whileInView={{opacity: [0, 1]}}
                     transition={{ duration: 0.5 }}
                     className='app__skills-exp-work'
                     data-tip
-                    data-for={work.name}
+                    data-tooltip-id={work.name}
                     key={work.name}
                     >
                       <h4 className='bold-text'>{work.name}</h4>
@@ -83,7 +85,7 @@ const Skills = () => {
                     >
                       {work.desc}
                     </Tooltip>
-                  </>
+                  </React.Fragment>
                 ))}
               </motion.div>
             </motion.div>
