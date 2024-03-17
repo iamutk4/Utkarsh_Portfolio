@@ -24,6 +24,11 @@ import about03 from '../assets/about03.png';
 import about04 from '../assets/about04.png';
 
 import profile from '../assets/profile.png';
+import profile1 from '../assets/profile1.webp';
+import profile2 from '../assets/profile2.jpg';
+import profile3 from '../assets/profile3.webp';
+import profile4 from '../assets/profile4.png';
+import profile5 from '../assets/profile5.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
 import utk_logo from '../assets/utk_logo.png';
@@ -63,7 +68,6 @@ export default {
   profile,
   circle,
   logo,
-  utk_logo,
   adidas,
   amazon,
   asus,
@@ -71,4 +75,10 @@ export default {
   nb,
   skype,
   spotify,
+  utk_logo,
+  profile1,
+  profile2,
+  profile3,
+  profile4,
+  profile5,
 };
