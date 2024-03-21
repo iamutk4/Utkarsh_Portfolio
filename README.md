@@ -45,6 +45,10 @@ To run this project locally, follow these steps:
    ```
    sanity start
    ```
+4. Alternatively, start development server by running
+   ```
+   npm run dev
+   ```
 
 ## Contributing
 
