@@ -76,15 +76,22 @@ const Skills = () => {
                     >
                       <h4 className='bold-text'>{work.name}</h4>
                       <p className='p-text'>{work.company}</p>
+                      <ul className='work-details'>
+                        {work.desc.split('*').map((detail, index) => (
+                          detail.trim() !== '' && (
+                            <li key={index}>{detail.trim()}</li>
+                          )
+                        ))}
+                </ul>
                     </motion.div>
-                    <Tooltip
+                    {/* <Tooltip
                     id={work.name}
                     effect="solid"
                     arrowColor="#fff"
                     className='skills-tooltip'
                     >
                       {work.desc}
-                    </Tooltip>
+                    </Tooltip> */}
                   </React.Fragment>
                 ))}
               </motion.div>

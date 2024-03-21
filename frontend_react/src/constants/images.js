@@ -1,4 +1,7 @@
 import email from '../assets/email.png';
+import email1 from '../assets/email1.png';
+import email2 from '../assets/email.jpeg';
+import email3 from '../assets/email3.jpeg';
 import mobile from '../assets/mobile.png';
 import api from '../assets/api.png';
 import cpp from '../assets/cpp.png';
@@ -41,6 +44,8 @@ import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 
+import cv from '../assets/cv.png';
+
 export default {
   email,
   mobile,
@@ -81,4 +86,8 @@ export default {
   profile3,
   profile4,
   profile5,
+  email1,
+  email2,
+  email3,
+  cv,
 };

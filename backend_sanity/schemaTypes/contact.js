@@ -17,6 +17,6 @@ export default {
             name:'message',
             title:'Message',
             type:'text'
-        }
-    ]
+        },
+    ],
 }
