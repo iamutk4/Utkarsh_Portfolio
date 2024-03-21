@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio repository! This repository contains the code for both the backend and frontend of my portfolio website.
 
-## Portfolio: https://utkarsh.netlify.app/
+Portfolio: https://utkarsh.netlify.app/
 
 ## Overview
 
