@@ -2,6 +2,8 @@
 
 Welcome to my personal portfolio repository! This repository contains the code for both the backend and frontend of my portfolio website.
 
+## Portfolio: https://utkarsh.netlify.app/
+
 ## Overview
 
 My portfolio is built using React JS for the frontend and Sanity CMS for the backend. It showcases my projects, skills, and experiences in an interactive and engaging manner.
