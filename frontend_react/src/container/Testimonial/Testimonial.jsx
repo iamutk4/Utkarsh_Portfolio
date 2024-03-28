@@ -52,6 +52,7 @@ const Testimonial = () => {
             <div className='app__flex' onClick={() => handleClick(currentIndex === 0 ? testimonials.length - 1 : currentIndex - 1)}>
               <HiChevronLeft />
             </div>
+            <h6>{(currentIndex + 1) + "/" + testimonials.length}</h6>
             <div className='app__flex' onClick={() => handleClick(currentIndex === testimonials.length - 1 ? 0 : currentIndex + 1)}>
               <HiChevronRight />
             </div>
@@ -67,8 +68,6 @@ const Testimonial = () => {
           key={brand._id}
           >
             <img src={urlFor(brand.imgUrl)} alt={brand.name} />
-
-
           </motion.div>
         ))}
 

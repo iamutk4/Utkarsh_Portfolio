@@ -75,11 +75,11 @@ const Footer = () => {
       <div className="app__footer-cards">
         <div className="app__footer-card ">
           <img src={images.email3} alt="email" />
-          <a href="mailto:hello@micael.com" className="p-text">utkarsh_jadon@hotmail.com</a>
+          <a href="mailto:utkarsh_jadon@hotmail.com" className="p-text">utkarsh_jadon@hotmail.com</a>
         </div>
         <div className="app__footer-card">
           <img src={images.mobile} alt="phone" />
-          <a href="tel:+1 (123) 456-7890" className="p-text">+1 (614) 779-5974</a>
+          <a href="tel:+1 (614) 779-5974" className="p-text">+1 (614) 779-5974</a>
         </div>
 
         {resume?.map((resume) => (
